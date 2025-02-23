@@ -1,0 +1,31 @@
+.title {
+  background-color:#247cff;
+  position: absolute;
+  width: 96%;
+  left: 2%;
+  top: -10%;
+  z-index: 1;
+  color: black;
+  height: 80px;
+  padding: 20px;
+  color: white;
+}
+.button-add{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 20px 70px 20px;
+
+}
+.add-experience{
+  display: flex;
+  font-size: 18px;
+  background-color: #247cff ;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  padding: 14px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+

@@ -1,0 +1,41 @@
+
+<div class="app-container ">
+
+  <mat-sidenav-container class="sidenav-container w-100">
+    <!-- Sidenav content -->
+    <mat-sidenav #sidenav mode="side" opened>
+
+      <mat-nav-list class="p-3">
+        <div class="title text-primary">
+          <i class="fa-solid fa-hospital px-2 fs-4"></i>
+          <h2 class="text-center" >{{doctorName}}</h2>
+        </div>
+        <a mat-list-item class="mt-2" routerLink="banner" routerLinkActive="active-link">Banner</a>
+        <a mat-list-item class="mt-2" routerLink="experience" routerLinkActive="active-link">Experience</a>
+        <a mat-list-item class="mt-2" routerLink="about" routerLinkActive="active-link">About</a>
+        <a mat-list-item class="mt-2" routerLink="service" routerLinkActive="active-link">Services</a>
+        <a mat-list-item class="mt-2" routerLink="testimsuiols" routerLinkActive="active-link">Testimsuiols</a>
+        <a mat-list-item class="mt-2" routerLink="links" routerLinkActive="active-link">Links</a>
+        <a mat-list-item class="mt-2" routerLink="clinks" routerLinkActive="active-link">Clinks</a>
+
+      </mat-nav-list>
+    </mat-sidenav>
+
+    <!-- Main content area -->
+    <mat-sidenav-content class="w-100">
+      <div class="content ">
+        <h4 style="height: 60px; line-height: 2; ">Dashboard</h4>
+        <div class="">
+        <router-outlet ></router-outlet>
+
+        </div>
+      </div>
+    </mat-sidenav-content>
+
+
+  </mat-sidenav-container>
+</div>
+
+
+  <!-- Button to toggle the sidenav -->
+  <!-- <button mat-button (click)="sidenav.toggle()" class="pt-5 mt-5">Toggle Sidenav</button> -->

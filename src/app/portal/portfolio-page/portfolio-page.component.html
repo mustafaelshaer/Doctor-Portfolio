@@ -1,0 +1,326 @@
+<div class="container">
+
+  <nav class="navbar navbar-expand-lg bg-light fixed-top shadow-lg ">
+   <a class="navbar-brand mx-auto d-lg-none" href="index.html">
+       {{doctorName}}
+     <span>Health Specialist</span>
+   </a>
+
+   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+       <span class="navbar-toggler-icon"></span>
+   </button>
+
+   <div class="collapse navbar-collapse" id="navbarNav">
+       <ul class="navbar-nav mx-auto">
+           <li class="nav-item active">
+               <a class="nav-link" href="#hero">Home</a>
+           </li>
+
+           <li class="nav-item">
+               <a class="nav-link" href="portfoilio">Experience</a>
+           </li>
+           <li class="nav-item">
+               <a class="nav-link" routerLink="/dasboard/adminPanel">dashboard</a>
+           </li>
+
+           <a class="navbar-brand d-none d-lg-block" href="index.html">
+               {{doctorName}}
+               <strong class="d-block">{{specialty}}</strong>
+           </a>
+
+           <li class="nav-item">
+               <a class="nav-link" href="#booking">About</a>
+           </li>
+
+           <li class="nav-item">
+               <a class="nav-link" href="#booking">Service</a>
+           </li>
+
+           <li class="nav-item">
+               <a class="nav-link" href="#contact">Patient</a>
+           </li>
+       </ul>
+   </div>
+ </nav>
+
+ <div class="section-one">
+ <div class="background-image"></div>
+ <div class="better-card">
+
+   <div class="heroText d-flex flex-column justify-content-center">
+
+     <h1 class="mt-auto mb-2">
+         Better
+         <div class="animated-info">
+             <span *ngFor="let item of animatedItems"  class="animated-item" >{{item}}</span>
+         </div>
+     </h1>
+     <h5 class="custom-text-mute">
+       Medic Care is a Bootstrap Template provided by TemplateMo website. Credits go to FreePik and RawPixel for images used in this template.
+     </h5>
+
+     <div class="button-div">
+
+       <!-- <button >LEARN MORE</button> -->
+
+       <div class="phone text-muted">
+         <i class="fa-solid fa-mobile-screen-button"></i>
+         <p>
+           010-020-03400
+         </p>
+       </div>
+     </div>
+ </div>
+
+
+ </div>
+ </div>
+
+ <div class="experiences-section section-padding">
+ <div class="row">
+   <div class="col-md-6 col-sm-12">
+     <div class="about">
+       <h2>Why Choose</h2>
+       <h1>Dr.{{doctorName}}</h1>
+       <div class="experiences">
+         <div class="skill">
+           <h5>Example1</h5>
+           <ul>
+             <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam et cumque saepe, non mollitia fugit dolore velit sed nisi omnis placeat maxime praesentium, illo blanditiis tempore doloremque veritatis, beatae repudiandae.</li>
+             <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam et cumque saepe, non mollitia fugit dolore velit sed nisi omnis placeat maxime praesentium, illo blanditiis tempore doloremque veritatis, beatae repudiandae.</li>
+           </ul>
+         </div>
+         <div class="skill">
+           <h5>Example2</h5>
+           <ul>
+             <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam et cumque saepe, non mollitia fugit dolore velit sed nisi omnis placeat maxime praesentium, illo blanditiis tempore doloremque veritatis, beatae repudiandae.</li>
+           </ul>
+         </div>
+         <div class="skill">
+           <h5>Example3</h5>
+           <ul>
+             <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam et cumque saepe, non mollitia fugit dolore velit sed nisi omnis placeat maxime praesentium, illo blanditiis tempore doloremque veritatis, beatae repudiandae.</li>
+           </ul>
+         </div>
+       </div>
+     </div>
+   </div>
+   <div class="col-md-6 col-sm-12" style="display: flex; align-items: center; justify-content: center;">
+     <div class="circle">
+       <p>
+         <span>12</span>
+         Years
+         <br>
+         of Experiences
+       </p>
+     </div>
+   </div>
+ </div>
+ </div>
+
+ <div class="about-section section-padding">
+ <div class="row">
+   <div class="col-md-6 col-sm-12">
+     <div class="doctor-card">
+       <div class="card-background"></div>
+       <img class="doc-image" src="../../assets/images/doc1.png" alt="">
+     </div>
+   </div>
+   <div class="col-md-6 col-sm-12">
+     <div class="about-doctor">
+       <div class="doctor-name mb-4">
+         <h2>About Dr.{{doctorName}}</h2>
+       </div>
+       <div class="about-text">
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla praesentium provident porro corrupti pariatur hic maiores sunt deserunt, atque eius temporibus sequi quos exercitationem, voluptatibus beatae quas facilis natus quisquam.</p>
+       </div>
+       <div class="info d-flex">
+         <h6 style="width: 240px;">Medical Degree:</h6>
+         <p>Doctor of Medicine (MD)</p>
+       </div>
+       <div class="info d-flex" >
+         <h6 style="width: 240px;">University:</h6>
+         <p>University of Medical sciences</p>
+       </div>
+       <div class="info d-flex">
+         <h6 style="width: 240px;">Year of Gruaduation:</h6>
+         <p>2010</p>
+       </div>
+       <div class="info d-flex">
+         <h6 style="width: 240px;">Speciality:</h6>
+         <p>Hematology & Oncology</p>
+       </div>
+       <div class="info d-flex">
+         <h6 style="width: 240px;">Experience:</h6>
+         <p>14 Years</p>
+       </div>
+       <div class="info d-flex">
+         <h6 style="width: 240px;">Location: </h6>
+         <p>Egypt,cairo</p>
+       </div>
+     </div>
+   </div>
+ </div>
+
+
+
+ </div>
+
+ <div class="services section-padding mt-5 pt-5 text-center">
+ <div class="row justify-content-around">
+   <div class="col-md-3 col-sm-12" >
+     <div class="sec-one ">
+       <div class="small-card m-auto">
+         <i class="fa-solid fa-hand-holding-dollar"></i>
+       </div>
+       <h6 class="small-card-title">Affartable Price</h6>
+       <p class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+     </div>
+   </div>
+   <div class="col-md-3 col-sm-12 ">
+     <div class="sec-one">
+       <div class="small-card m-auto">
+         <i class="fa-solid fa-stethoscope"></i>
+       </div>
+       <h6 class="small-card-title">Professional</h6>
+       <p >Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+     </div>
+   </div>
+   <div class="col-md-3 col-sm-12 ">
+     <div class="sec-one">
+       <div class="small-card m-auto">
+         <i class="fa-solid fa-house-medical"></i>
+       </div>
+       <h6 class="small-card-title">Satisfactory Service</h6>
+       <p >Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+     </div>
+   </div>
+ </div>
+ </div>
+
+ <!-- Owl Carousel -->
+ <div class="slide-section">
+ <h1 class="text-center py-4 fw-bold">Our Patients</h1>
+ <div class="owl-carousel owl-theme" >
+   <div class="item text-white">
+     <div class="patient-card">
+       <i class="fa-solid fa-star"></i>
+       <i class="fa-solid fa-star"></i>
+       <i class="fa-solid fa-star"></i>
+       <i class="fa-solid fa-star"></i>
+       <i class="fa-regular fa-star"></i>
+       <h5 class="patient-word" >Great Service!</h5>
+       <p class="patient-paragraph">
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore dignissimos, ipsa minima rem, delectus ab aliquid in porro corporis, quibusdam dolorum beatae dolore. Iste sit explicabo mollitia velit, consequatur delectus!
+       </p>
+       <div class="d-flex align-items-center">
+         <img src="../../assets/images/doc1.png" alt="" >
+         <h5 class="patient-title px-4">
+           Ben Walker
+         </h5>
+       </div>
+     </div>
+   </div>
+   <div class="item text-white">
+     <div class="patient-card">
+       <i class="fa-solid fa-star"></i>
+       <i class="fa-solid fa-star"></i>
+       <i class="fa-solid fa-star"></i>
+       <i class="fa-solid fa-star"></i>
+       <i class="fa-regular fa-star"></i>
+       <h5 class="patient-word" >Great Service!</h5>
+       <p class="patient-paragraph">
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore dignissimos, ipsa minima rem, delectus ab aliquid in porro corporis, quibusdam dolorum beatae dolore. Iste sit explicabo mollitia velit, consequatur delectus!
+       </p>
+       <div class="d-flex align-items-center">
+         <img src="../../assets/images/doc1.png" alt="" >
+         <h5 class="patient-title px-4">
+           Ben Walker
+         </h5>
+       </div>
+     </div>
+   </div>
+   <div class="item text-white">
+     <div class="patient-card">
+       <i class="fa-solid fa-star"></i>
+       <i class="fa-solid fa-star"></i>
+       <i class="fa-solid fa-star"></i>
+       <i class="fa-solid fa-star"></i>
+       <i class="fa-regular fa-star"></i>
+       <h5 class="patient-word" >Great Service!</h5>
+       <p class="patient-paragraph">
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore dignissimos, ipsa minima rem, delectus ab aliquid in porro corporis, quibusdam dolorum beatae dolore. Iste sit explicabo mollitia velit, consequatur delectus!
+       </p>
+       <div class="d-flex align-items-center">
+         <img src="../../assets/images/doc1.png" alt="" >
+         <h5 class="patient-title px-4">
+           Ben Walker
+         </h5>
+       </div>
+     </div>
+   </div>
+   <div class="item text-white">
+     <div class="patient-card">
+       <i class="fa-solid fa-star"></i>
+       <i class="fa-solid fa-star"></i>
+       <i class="fa-solid fa-star"></i>
+       <i class="fa-solid fa-star"></i>
+       <i class="fa-regular fa-star"></i>
+       <h5 class="patient-word" >Great Service!</h5>
+       <p class="patient-paragraph">
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore dignissimos, ipsa minima rem, delectus ab aliquid in porro corporis, quibusdam dolorum beatae dolore. Iste sit explicabo mollitia velit, consequatur delectus!
+       </p>
+       <div class="d-flex align-items-center">
+         <img src="../../assets/images/doc1.png" alt="" >
+         <h5 class="patient-title px-4">
+           Ben Walker
+         </h5>
+       </div>
+     </div>
+   </div>
+   <div class="item text-white">
+     <div class="patient-card">
+       <i class="fa-solid fa-star"></i>
+       <i class="fa-solid fa-star"></i>
+       <i class="fa-solid fa-star"></i>
+       <i class="fa-solid fa-star"></i>
+       <i class="fa-regular fa-star"></i>
+       <h5 class="patient-word" >Great Service!</h5>
+       <p class="patient-paragraph">
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore dignissimos, ipsa minima rem, delectus ab aliquid in porro corporis, quibusdam dolorum beatae dolore. Iste sit explicabo mollitia velit, consequatur delectus!
+       </p>
+       <div class="d-flex align-items-center">
+         <img src="../../assets/images/doc1.png" alt="" >
+         <h5 class="patient-title px-4">
+           Ben Walker
+         </h5>
+       </div>
+     </div>
+   </div>
+   <div class="item text-white">
+     <div class="patient-card">
+       <i class="fa-solid fa-star"></i>
+       <i class="fa-solid fa-star"></i>
+       <i class="fa-solid fa-star"></i>
+       <i class="fa-solid fa-star"></i>
+       <i class="fa-regular fa-star"></i>
+       <h5 class="patient-word" >Great Service!</h5>
+       <p class="patient-paragraph">
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore dignissimos, ipsa minima rem, delectus ab aliquid in porro corporis, quibusdam dolorum beatae dolore. Iste sit explicabo mollitia velit, consequatur delectus!
+       </p>
+       <div class="d-flex align-items-center">
+         <img src="../../assets/images/doc1.png" alt="" >
+         <h5 class="patient-title px-4">
+           Ben Walker
+         </h5>
+       </div>
+     </div>
+   </div>
+
+ </div>
+ </div>
+
+ </div>
+
+
+ <app-footer></app-footer>

@@ -1,0 +1,19 @@
+@import '../../../styles.scss';
+
+
+footer{
+  h1{
+    color: $primary-color
+  }
+  overflow: hidden
+};
+.doctor-info{
+  display: flex;
+  justify-content: center;
+
+}
+@media (max-width: 768px) {
+.doctor-info{
+  display: block;
+}
+}

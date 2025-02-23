@@ -1,0 +1,645 @@
+@import '../../../styles.scss';
+
+:host::ng-deep{
+  .slide-section{
+    .owl-item{
+      background-color: rgb(179, 178, 178);
+      opacity: 50%;
+      border-radius: 6px;
+    }
+    .active {
+      background-color: black !important;
+      border-radius: 6px;
+      opacity: 100%;
+    }
+    .owl-next span,
+    .owl-prev span{
+
+      color: $primary-color;
+      font-size: 30px;
+      font-weight: bold;
+      padding: 0 10px;
+
+    }
+  }
+}
+
+.section-padding {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+.navbar-brand {
+color: $primary-color;
+font-size: 24px !important;
+font-weight: bold !important;
+}
+/*Startttttttttttttt Section one */
+.section-one {
+background-image: url(../../../assets/images/slide1.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+height: 80vh !important;
+display: flex;
+justify-content: end;
+align-items: end;
+margin-top: 96px !important;
+
+
+/*---------------------------------------
+  ANIMATED TEXT
+-----------------------------------------*/
+.animated {
+  position: relative;
+}
+
+.animated-info {
+  display: inline-block;
+  vertical-align: top;
+  min-width: 250px;
+  position: relative;
+}
+
+.animated-item {
+  color: var(--primary-color);
+}
+
+.animated-item {
+  display: block;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  animation: BottomTotop 9s linear infinite 0s;
+}
+
+.animated-item:nth-child(2n+2) {
+  animation-delay: 3s;
+}
+
+.animated-item:nth-child(3n+3) {
+  animation-delay: 6s;
+}
+
+@keyframes BottomTotop {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  10% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  25% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  30% {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+// end animated Text
+
+  .background-image img{
+    width: 100%;
+    height: 80vh;
+  }
+
+  .better-card{
+    background-color: $white-color;
+    width: 50%;
+    min-height: 45%;
+    padding: 30px;
+      h1{
+        font-weight: bold;
+        span{
+        color: $primary-color;
+        }
+      }
+      .custom-text-mute{
+        opacity: 60% ;
+        font-weight: 400;
+        }
+
+      .button-div{
+        margin-top: 25px;
+        display: flex;
+        align-items: center;
+          button {
+          outline: none;
+          border: 1px solid $border-color;
+          padding: 8px 35px;
+          color: $primary-color;
+          background-color: $white-color;
+          font-weight: 600;
+          }
+          .phone{
+          margin-left: 28px;
+          display: flex;
+          align-items: center;
+          font-size: 20px !important;
+            p{
+              line-height: 1;
+              padding-top: 10px;
+              padding-left: 10px;
+            }
+          }
+      }
+
+    }
+}
+/*enddddddddddddddddd Section one */
+
+/*Startttttttttttttttt experiences-section */
+.experiences-section{
+  .circle {
+    background-color: white;
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    padding: 40px;
+
+    font-size: 30px;
+    text-align: center;
+    line-height: 1;
+
+    span{
+      font-size:8rem;
+      color: $primary-color;
+      font-weight: bold;
+    }
+  }
+}
+/*enddddddddddddddddd experiences-section */
+
+/*Startttttttttttttttt About-section */
+.card-background {
+  width: 400px;
+  height: 450px;
+  background-color: $primary-color;
+  clip-path: polygon(2.2% 0%, 100.3% 54.5%, 100.3% 65.3%, 100.3% 100.3%, 85% 100%, 15% 100%, 0% 100.3%, 0% 0%);
+  border-radius: 10px;
+}
+.doctor-card{
+  position: relative;
+  .doc-image{
+    position: absolute;
+    bottom: 0%;
+    left: 6%;
+    width: 300px;
+    height: 480px;
+  }
+}
+.about-doctor {
+  font-weight: bold;
+  .doctor-name {
+    text-align: center;
+    background: linear-gradient(45deg, blue, darkblue);
+    //background-color: $primary-color;
+    padding: 12px;
+    border-radius: 70px 0px;
+    color: $white-color;
+  }
+  .info{
+    color: $primary-color;
+    p{
+      padding-left: 10px;
+      color:$dark-color;
+    }
+  }
+}
+/******************** serviceeeeeeeee Section ****************************/
+.services{
+  h6{
+    font-weight: bold;
+    padding-top: 10px;
+  }
+  .small-card{
+    background-color: $primary-color;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    i{
+      font-size: 50px;
+      color: white;
+    }
+  }
+
+}
+
+
+/*enddddddddddddddddd About-section */
+
+// STarttttttttttttt owl carousel
+
+.slide-section{
+  overflow: hidden;
+  width: 78%;
+  margin: auto;
+
+}
+
+.owl-carousel .item{
+  justify-content: center;
+  color: $primary-color;
+  align-items: center;
+  border-radius: 20px;
+  .patient-card {
+
+    height: 300px;
+    padding: 20px;
+    i{
+      padding: 0px 2px;
+    }
+    .patient-word{
+      color: $primary-color;
+      padding: 10px 0px;
+    }
+    img {
+      width: 70px;
+      height: 70px;
+      background-color: $white-color;
+      border-radius: 50%;
+    }
+  }
+}
+
+// Enddddddddddddddd owl Carousel
+
+
+
+
+/*
+.animated-item:nth-child(2n+2) {
+  animation-delay: 2s;
+}
+
+.animated-item:nth-child(3n+3) {
+  animation-delay: 4s;
+}
+  */
+
+
+
+/*---------------------------------------
+  NAVIGATION Navbar
+-----------------------------------------*/
+.navbar {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.navbar-brand {
+  color: var($primary-color);
+  margin: 0 30px;
+  padding: 0;
+  text-align: center;
+}
+
+.navbar-brand strong {
+  color: var($p-color);
+  font-size: 12px;
+  position: relative;
+  bottom: 5px;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+.navbar-nav .nav-link {
+  color: var($p-color);
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--menu-font-size);
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.navbar-nav .nav-item.active .nav-link,
+.nav-link:focus,
+.nav-link:hover {
+  color: var($dark-color);
+}
+
+.nav-link:focus {
+  color: var($p-color);
+}
+
+.navbar-toggler {
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  margin: 0;
+  width: 30px;
+  height: 35px;
+  outline: none;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+  background: transparent;
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before,
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
+  transition: top 300ms 50ms ease, -webkit-transform 300ms 350ms ease;
+  transition: top 300ms 50ms ease, transform 300ms 350ms ease;
+  transition: top 300ms 50ms ease, transform 300ms 350ms ease, -webkit-transform 300ms 350ms ease;
+  top: 0;
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
+  transform: rotate(45deg);
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
+  transform: rotate(-45deg);
+}
+
+.navbar-toggler .navbar-toggler-icon {
+  background: var($dark-color);
+  transition: background 10ms 300ms ease;
+  display: block;
+  width: 30px;
+  height: 2px;
+  position: relative;
+}
+
+.navbar-toggler .navbar-toggler-icon:before,
+.navbar-toggler .navbar-toggler-icon:after {
+  transition: top 300ms 350ms ease, -webkit-transform 300ms 50ms ease;
+  transition: top 300ms 350ms ease, transform 300ms 50ms ease;
+  transition: top 300ms 350ms ease, transform 300ms 50ms ease, -webkit-transform 300ms 50ms ease;
+  position: absolute;
+  right: 0;
+  left: 0;
+  background: var($dark-color);
+  width: 30px;
+  height: 2px;
+  content: '';
+}
+
+.navbar-toggler .navbar-toggler-icon:before {
+  top: -8px;
+}
+
+.navbar-toggler .navbar-toggler-icon:after {
+  top: 8px;
+}
+
+
+// media section
+
+@media (max-width: 768px) {
+
+  .section-one {
+    .better-card{
+      width: 340px;
+      height: 100px;
+      padding: 15px;
+    }
+    .button-div{
+
+      display: flex !important;
+      .phone{
+        p{
+          font-size: 16px !important;
+          padding: 0;
+        }
+      }
+      margin-top: 10px;
+      font-size: 14px !important;
+      button{
+        padding: 5px 10px !important;
+        font-size: 14px !important;
+      }
+    }
+  }
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
+  .better-card h1 {
+    font-size: 1.8rem;
+  }
+
+  .better-card h5 {
+    font-size: 1rem;
+  }
+  .experiences-section .row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .col-md-6 {
+    max-width: 100%;
+  }
+
+  .circle {
+    margin-top: 30px;
+  }
+  .about-section .row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .doctor-card {
+    margin-bottom: 30px;
+  }
+
+  .doctor-name h2 {
+    font-size: 1.8rem;
+  }
+
+  .info h6 {
+    width: auto;
+    font-size: 0.9rem;
+  }
+
+  .info p {
+    font-size: 0.9rem;
+  }
+  .owl-carousel {
+    padding: 20px;
+  }
+
+  .owl-carousel .item {
+    padding: 15px;
+    font-size: 0.9rem;
+  }
+
+  /* Carousel item visibility and responsiveness */
+  .owl-carousel {
+    display: block;
+    width: 100%;
+  }
+  .section-one {
+    height: 80vh; /* Reducing height for mobile */
+  }
+
+  .about-doctor {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .small-card-title {
+    font-size: 1rem;
+  }
+  .about-doctor {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .patient-card {
+    font-size: 1.1rem;
+  }
+
+  .button-div button {
+    padding: 15px 25px;
+  }
+
+  .owl-carousel .item{
+    .patient-card {
+      h5{
+        font-size: 20px;
+        padding: 0px 5px !important;
+      }
+      .patient-paragraph{
+        font-size: 14px;
+      }
+
+      height: 300px;
+      padding: 10px;
+      i{
+        padding: 0px 2px;
+        font-size: 14px;
+      }
+      .patient-word{
+        color: $primary-color;
+        padding: 5px 0px;
+      }
+      img {
+        width: 40px;
+        height: 40px;
+        background-color: $white-color;
+        border-radius: 50%;
+      }
+    }
+  }
+}
+
+/* For desktop screens */
+@media (min-width: 1025px) {
+  .section-one {
+    height: 100vh;
+  }
+
+  .better-card h1 {
+    font-size: 3rem;
+  }
+}
+/* For mobile screens */
+
+@media (max-width: 376px) {
+
+  .card-background {
+    width: 300px;
+    height: 350px;
+    border-radius: 10px;
+  }
+  .doctor-card{
+    .doc-image{
+      width: 250px;
+      height: 480px;
+    }
+  }
+
+  .section-one {
+    .better-card{
+      width: 310px;
+      height: 100px;
+      padding: 5px;
+      h1{
+        font-size: 20px !important;
+      }
+      h5{
+        font-size: 14px !important;
+      }
+    }
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    .button-div{
+
+      display: flex !important;
+      .phone{
+        p{
+          font-size: 14px !important;
+          padding: 0;
+        }
+      }
+      margin-top: 10px;
+      font-size: 14px !important;
+      button{
+        padding: 5px 10px !important;
+        font-size: 14px !important;
+      }
+    }
+  }
+
+  .owl-carousel .item{
+    .patient-card {
+      h5{
+        font-size: 16px;
+        padding: 0px 5px !important;
+      }
+      .patient-paragraph{
+        font-size: 12px;
+      }
+
+      height: 300px;
+      padding: 10px;
+      i{
+        padding: 0px 2px;
+        font-size: 14px;
+      }
+      .patient-word{
+        color: $primary-color;
+        padding: 5px 0px;
+      }
+      img {
+        width: 40px;
+        height: 40px;
+        background-color: $white-color;
+        border-radius: 50%;
+      }
+    }
+  }
+}
+
+
+
