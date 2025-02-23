@@ -6,7 +6,7 @@ import { Injectable } from '@angular/core';
 export class BaseService {
 
   constructor() { }
-  doctorName:string = "John Smith" ;
-  specialty:string = "Health Specialist"
+  doctorName:string = "Samar Hatem" ;
+  specialty:string = "Dentist"
 
 }

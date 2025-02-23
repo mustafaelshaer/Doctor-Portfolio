@@ -13,15 +13,15 @@
    <div class="collapse navbar-collapse" id="navbarNav">
        <ul class="navbar-nav mx-auto">
            <li class="nav-item active">
-               <a class="nav-link" href="#hero">Home</a>
+               <a class="nav-link" href="#Home">Home</a>
            </li>
 
            <li class="nav-item">
-               <a class="nav-link" href="portfoilio">Experience</a>
+               <a class="nav-link" href="#Experience">Experience</a>
            </li>
-           <li class="nav-item">
+           <!-- <li class="nav-item">
                <a class="nav-link" routerLink="/dasboard/adminPanel">dashboard</a>
-           </li>
+           </li> -->
 
            <a class="navbar-brand d-none d-lg-block" href="index.html">
                {{doctorName}}
@@ -29,298 +29,309 @@
            </a>
 
            <li class="nav-item">
-               <a class="nav-link" href="#booking">About</a>
+               <a class="nav-link" href="#About">About</a>
            </li>
 
            <li class="nav-item">
-               <a class="nav-link" href="#booking">Service</a>
+               <a class="nav-link" href="#Service">Service</a>
            </li>
 
            <li class="nav-item">
-               <a class="nav-link" href="#contact">Patient</a>
+               <a class="nav-link" href="#Patient">Patient</a>
            </li>
        </ul>
    </div>
  </nav>
+<section id="Home">
+  <div class="section-one">
+    <div class="background-image"></div>
+    <div class="better-card">
+   
+      <div class="heroText d-flex flex-column justify-content-center">
+   
+        <h1 class="mt-auto mb-2">
+          Welcome to my dental care portfolio
+            <div class="animated-info">
+                <span *ngFor="let item of animatedItems"  class="animated-item" >{{item}}</span>
+            </div>
+        </h1>
+        <h5 class="custom-text-mute">
+          As a dedicated dentist, I am committed to providing exceptional oral healthcare, ensuring beautiful and healthy smiles for my patients. With expertise in modern dentistry techniques, I focus on personalized treatments, patient comfort, and long-term oral wellness. Explore my work, services, and experience in delivering top-quality dental care.
+        </h5>
+   
+        <div class="button-div">
+   
+          <!-- <button >LEARN MORE</button> -->
+   
+          <div class="phone text-muted">
+            <i class="fa-solid fa-mobile-screen-button"></i>
+            <p>
+              010-262-454-30
+            </p>
+          </div>
+        </div>
+    </div>
+   
+   
+    </div>
+    </div>
+</section>
 
- <div class="section-one">
- <div class="background-image"></div>
- <div class="better-card">
+<section id="Experience">
+  <div class="experiences-section section-padding">
+    <div class="row">
+      <div class="col-md-6 col-sm-12">
+        <div class="about">
+          <h2>Why Choose</h2>
+          <h1>Dr.{{doctorName}}</h1>
+          <div class="experiences">
+            <div class="skill">
+              <h5>🦷 Expert Care & Experience</h5>
+              <ul>
+                <li>Expert Care & Experience – With years of hands-on experience and continuous learning, I provide high-quality dental treatments tailored to each patient’s needs.</li>
+              </ul>
+            </div>
+            <div class="skill">
+              <h5>🔬 Advanced Technology & Techniques              </h5>
+              <ul>
+                <li>Utilizing the latest dental technology and modern treatment methods, I ensure efficient, comfortable, and precise care for optimal oral health.                  .</li>
+              </ul>
+            </div>
+            <div class="skill">
+              <h5>😊 Patient-Centered Approach
+              </h5>
+              <ul>
+                <li>I prioritize patient comfort, clear communication, and personalized treatment plans to create a stress-free and positive dental experience.                  .</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-12" style="display: flex; align-items: center; justify-content: center;">
+        <div class="circle">
+          <p>
+            <span>12</span>
+            Years
+            <br>
+            of Experiences
+          </p>
+        </div>
+      </div>
+    </div>
+    </div>
+</section>
 
-   <div class="heroText d-flex flex-column justify-content-center">
+<section id="About">
+  <div class="about-section section-padding">
+    <div class="row">
+      <div class="col-md-6 col-sm-12">
+        <div class="doctor-card">
+          <div class="card-background"></div>
+          <img class="doc-image" src="assets/images/doc1.png" alt="">
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-12">
+        <div class="about-doctor">
+          <div class="doctor-name mb-4">
+            <h2>About Dr.{{doctorName}}</h2>
+          </div>
+          <div class="about-text">
+            <p>I am a dedicated dentist with a passion for creating healthy and confident smiles. With extensive experience in general and cosmetic dentistry, I provide personalized, high-quality dental care tailored to each patient’s needs. My goal is to ensure a comfortable and stress-free experience, using the latest technology and modern treatment techniques.              .</p>
+          </div>
+          <div class="info d-flex">
+            <h6 style="width: 240px;">Medical Degree:</h6>
+            <p>Doctor of Dental Surgery (DDS) / Bachelor of Dental Surgery (BDS) (Choose based on your actual degree)</p>
+          </div>
+          <div class="info d-flex" >
+            <h6 style="width: 240px;">University:</h6>
+            <p>University of Dental Sciences, Cairo</p>
+          </div>
+          <div class="info d-flex">
+            <h6 style="width: 240px;">Year of Gruaduation:</h6>
+            <p>2010</p>
+          </div>
+          <div class="info d-flex">
+            <h6 style="width: 240px;">Speciality:</h6>
+            <p> General Dentistry & Cosmetic Dentistry</p>
+          </div>
+          <div class="info d-flex">
+            <h6 style="width: 240px;">Experience:</h6>
+            <p>12 Years</p>
+          </div>
+          <div class="info d-flex">
+            <h6 style="width: 240px;">Location: </h6>
+            <p>Egypt,cairo</p>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+   
+   
+    </div>
+</section>
 
-     <h1 class="mt-auto mb-2">
-         Better
-         <div class="animated-info">
-             <span *ngFor="let item of animatedItems"  class="animated-item" >{{item}}</span>
-         </div>
-     </h1>
-     <h5 class="custom-text-mute">
-       Medic Care is a Bootstrap Template provided by TemplateMo website. Credits go to FreePik and RawPixel for images used in this template.
-     </h5>
+<section id="Service"> 
+  <div class="services section-padding mt-5 pt-5 text-center">
+    <div class="row justify-content-around">
+      <div class="col-md-3 col-sm-12" >
+        <div class="sec-one ">
+          <div class="small-card m-auto">
+            <i class="fa-solid fa-hand-holding-dollar"></i>
+          </div>
+          <h6 class="small-card-title">Affordable Price</h6>
+          <p class="">We provide high-quality dental care at competitive prices, ensuring accessible treatment for all.</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-12 ">
+        <div class="sec-one">
+          <div class="small-card m-auto">
+            <i class="fa-solid fa-stethoscope"></i>
+          </div>
+          <h6 class="small-card-title">Professional</h6>
+          <p>With years of experience and expertise, we offer precise and effective dental solutions tailored to your needs.</p>
+          
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-12 ">
+        <div class="sec-one">
+          <div class="small-card m-auto">
+            <i class="fa-solid fa-house-medical"></i>
+          </div>
+          <h6 class="small-card-title">Satisfactory Service</h6>
+          <p>Patient satisfaction is our priority, delivering comfortable and personalized care for a stress-free experience.</p>
+        </div>
+      </div>
+    </div>
+    </div>
+</section>
 
-     <div class="button-div">
-
-       <!-- <button >LEARN MORE</button> -->
-
-       <div class="phone text-muted">
-         <i class="fa-solid fa-mobile-screen-button"></i>
-         <p>
-           010-020-03400
-         </p>
-       </div>
-     </div>
- </div>
-
-
- </div>
- </div>
-
- <div class="experiences-section section-padding">
- <div class="row">
-   <div class="col-md-6 col-sm-12">
-     <div class="about">
-       <h2>Why Choose</h2>
-       <h1>Dr.{{doctorName}}</h1>
-       <div class="experiences">
-         <div class="skill">
-           <h5>Example1</h5>
-           <ul>
-             <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam et cumque saepe, non mollitia fugit dolore velit sed nisi omnis placeat maxime praesentium, illo blanditiis tempore doloremque veritatis, beatae repudiandae.</li>
-             <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam et cumque saepe, non mollitia fugit dolore velit sed nisi omnis placeat maxime praesentium, illo blanditiis tempore doloremque veritatis, beatae repudiandae.</li>
-           </ul>
-         </div>
-         <div class="skill">
-           <h5>Example2</h5>
-           <ul>
-             <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam et cumque saepe, non mollitia fugit dolore velit sed nisi omnis placeat maxime praesentium, illo blanditiis tempore doloremque veritatis, beatae repudiandae.</li>
-           </ul>
-         </div>
-         <div class="skill">
-           <h5>Example3</h5>
-           <ul>
-             <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam et cumque saepe, non mollitia fugit dolore velit sed nisi omnis placeat maxime praesentium, illo blanditiis tempore doloremque veritatis, beatae repudiandae.</li>
-           </ul>
-         </div>
-       </div>
-     </div>
-   </div>
-   <div class="col-md-6 col-sm-12" style="display: flex; align-items: center; justify-content: center;">
-     <div class="circle">
-       <p>
-         <span>12</span>
-         Years
-         <br>
-         of Experiences
-       </p>
-     </div>
-   </div>
- </div>
- </div>
-
- <div class="about-section section-padding">
- <div class="row">
-   <div class="col-md-6 col-sm-12">
-     <div class="doctor-card">
-       <div class="card-background"></div>
-       <img class="doc-image" src="../../assets/images/doc1.png" alt="">
-     </div>
-   </div>
-   <div class="col-md-6 col-sm-12">
-     <div class="about-doctor">
-       <div class="doctor-name mb-4">
-         <h2>About Dr.{{doctorName}}</h2>
-       </div>
-       <div class="about-text">
-         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla praesentium provident porro corrupti pariatur hic maiores sunt deserunt, atque eius temporibus sequi quos exercitationem, voluptatibus beatae quas facilis natus quisquam.</p>
-       </div>
-       <div class="info d-flex">
-         <h6 style="width: 240px;">Medical Degree:</h6>
-         <p>Doctor of Medicine (MD)</p>
-       </div>
-       <div class="info d-flex" >
-         <h6 style="width: 240px;">University:</h6>
-         <p>University of Medical sciences</p>
-       </div>
-       <div class="info d-flex">
-         <h6 style="width: 240px;">Year of Gruaduation:</h6>
-         <p>2010</p>
-       </div>
-       <div class="info d-flex">
-         <h6 style="width: 240px;">Speciality:</h6>
-         <p>Hematology & Oncology</p>
-       </div>
-       <div class="info d-flex">
-         <h6 style="width: 240px;">Experience:</h6>
-         <p>14 Years</p>
-       </div>
-       <div class="info d-flex">
-         <h6 style="width: 240px;">Location: </h6>
-         <p>Egypt,cairo</p>
-       </div>
-     </div>
-   </div>
- </div>
-
-
-
- </div>
-
- <div class="services section-padding mt-5 pt-5 text-center">
- <div class="row justify-content-around">
-   <div class="col-md-3 col-sm-12" >
-     <div class="sec-one ">
-       <div class="small-card m-auto">
-         <i class="fa-solid fa-hand-holding-dollar"></i>
-       </div>
-       <h6 class="small-card-title">Affartable Price</h6>
-       <p class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-     </div>
-   </div>
-   <div class="col-md-3 col-sm-12 ">
-     <div class="sec-one">
-       <div class="small-card m-auto">
-         <i class="fa-solid fa-stethoscope"></i>
-       </div>
-       <h6 class="small-card-title">Professional</h6>
-       <p >Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-     </div>
-   </div>
-   <div class="col-md-3 col-sm-12 ">
-     <div class="sec-one">
-       <div class="small-card m-auto">
-         <i class="fa-solid fa-house-medical"></i>
-       </div>
-       <h6 class="small-card-title">Satisfactory Service</h6>
-       <p >Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-     </div>
-   </div>
- </div>
- </div>
-
+<section id="Patient">
+  <div class="slide-section">
+    <h1 class="text-center py-4 fw-bold">Our Patients</h1>
+    <div class="owl-carousel owl-theme" >
+      <div class="item text-white">
+        <div class="patient-card">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <h5 class="patient-word" >Great Service!</h5>
+          <p class="patient-paragraph">
+            "I had an amazing experience! The dentist was very professional and made me feel at ease. The staff was friendly, and the clinic was clean and well-equipped. Highly recommended!"
+                     </p>
+          <div class="d-flex align-items-center">
+            <img src="assets/images/doc1.png" alt="" >
+            <h5 class="patient-title px-4">
+              — Ahmed M. 
+            </h5>
+          </div>
+        </div>
+      </div>
+      <div class="item text-white">
+        <div class="patient-card">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <h5 class="patient-word" >Great Service!</h5>
+          <p class="patient-paragraph">
+            "I was nervous about my dental procedure, but the doctor explained everything clearly and ensured I was comfortable throughout. It was completely painless! Thank you for the great care."
+                    </p>
+          <div class="d-flex align-items-center">
+            <img src="assets/images/doc1.png" alt="" >
+            <h5 class="patient-title px-4">
+              — Sara A. 
+            </h5>
+          </div>
+        </div>
+      </div>
+      <div class="item text-white">
+        <div class="patient-card">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <h5 class="patient-word" >Great Service!</h5>
+          <p class="patient-paragraph">
+            "I got a cosmetic dental treatment, and the results exceeded my expectations! My smile looks natural and beautiful. I appreciate the detailed care and expertise."
+                    </p>
+          <div class="d-flex align-items-center">
+            <img src="assets/images/doc1.png" alt="" >
+            <h5 class="patient-title px-4">
+              — Mohammed H.
+            </h5>
+          </div>
+        </div>
+      </div>
+      <div class="item text-white">
+        <div class="patient-card">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <h5 class="patient-word" >Great Service!</h5>
+          <p class="patient-paragraph">
+            "The dentist took the time to explain my treatment plan in detail. I felt well cared for, and the entire team was very professional. I wouldn't go anywhere else for my dental care!"
+          </p>
+          <div class="d-flex align-items-center">
+            <img src="assets/images/doc1.png" alt="" >
+            <h5 class="patient-title px-4">
+              — Fatima K.
+            </h5>
+          </div>
+        </div>
+      </div>
+      <div class="item text-white">
+        <div class="patient-card">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <h5 class="patient-word" >Great Service!</h5>
+          <p class="patient-paragraph">
+            "I took my son for his first dental visit, and the doctor was so patient and gentle. He had a great experience, and now he’s no longer afraid of the dentist!"
+          </p>
+          <div class="d-flex align-items-center">
+            <img src="assets/images/doc1.png" alt="" >
+            <h5 class="patient-title px-4">
+              — Omar R.
+            </h5>
+          </div>
+        </div>
+      </div>
+      <div class="item text-white">
+        <div class="patient-card">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <h5 class="patient-word" >Great Service!</h5>
+          <p class="patient-paragraph">
+            "From booking my appointment to completing my treatment, everything was smooth and hassle-free. The clinic is well-organized, and the waiting time was minimal."
+          </p>
+          <div class="d-flex align-items-center">
+            <img src="assets/images/doc1.png" alt="" >
+            <h5 class="patient-title px-4">
+              — Layla S.
+            </h5>
+          </div>
+        </div>
+      </div>
+   
+    </div>
+    </div>
+</section>
  <!-- Owl Carousel -->
- <div class="slide-section">
- <h1 class="text-center py-4 fw-bold">Our Patients</h1>
- <div class="owl-carousel owl-theme" >
-   <div class="item text-white">
-     <div class="patient-card">
-       <i class="fa-solid fa-star"></i>
-       <i class="fa-solid fa-star"></i>
-       <i class="fa-solid fa-star"></i>
-       <i class="fa-solid fa-star"></i>
-       <i class="fa-regular fa-star"></i>
-       <h5 class="patient-word" >Great Service!</h5>
-       <p class="patient-paragraph">
-         Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore dignissimos, ipsa minima rem, delectus ab aliquid in porro corporis, quibusdam dolorum beatae dolore. Iste sit explicabo mollitia velit, consequatur delectus!
-       </p>
-       <div class="d-flex align-items-center">
-         <img src="../../assets/images/doc1.png" alt="" >
-         <h5 class="patient-title px-4">
-           Ben Walker
-         </h5>
-       </div>
-     </div>
-   </div>
-   <div class="item text-white">
-     <div class="patient-card">
-       <i class="fa-solid fa-star"></i>
-       <i class="fa-solid fa-star"></i>
-       <i class="fa-solid fa-star"></i>
-       <i class="fa-solid fa-star"></i>
-       <i class="fa-regular fa-star"></i>
-       <h5 class="patient-word" >Great Service!</h5>
-       <p class="patient-paragraph">
-         Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore dignissimos, ipsa minima rem, delectus ab aliquid in porro corporis, quibusdam dolorum beatae dolore. Iste sit explicabo mollitia velit, consequatur delectus!
-       </p>
-       <div class="d-flex align-items-center">
-         <img src="../../assets/images/doc1.png" alt="" >
-         <h5 class="patient-title px-4">
-           Ben Walker
-         </h5>
-       </div>
-     </div>
-   </div>
-   <div class="item text-white">
-     <div class="patient-card">
-       <i class="fa-solid fa-star"></i>
-       <i class="fa-solid fa-star"></i>
-       <i class="fa-solid fa-star"></i>
-       <i class="fa-solid fa-star"></i>
-       <i class="fa-regular fa-star"></i>
-       <h5 class="patient-word" >Great Service!</h5>
-       <p class="patient-paragraph">
-         Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore dignissimos, ipsa minima rem, delectus ab aliquid in porro corporis, quibusdam dolorum beatae dolore. Iste sit explicabo mollitia velit, consequatur delectus!
-       </p>
-       <div class="d-flex align-items-center">
-         <img src="../../assets/images/doc1.png" alt="" >
-         <h5 class="patient-title px-4">
-           Ben Walker
-         </h5>
-       </div>
-     </div>
-   </div>
-   <div class="item text-white">
-     <div class="patient-card">
-       <i class="fa-solid fa-star"></i>
-       <i class="fa-solid fa-star"></i>
-       <i class="fa-solid fa-star"></i>
-       <i class="fa-solid fa-star"></i>
-       <i class="fa-regular fa-star"></i>
-       <h5 class="patient-word" >Great Service!</h5>
-       <p class="patient-paragraph">
-         Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore dignissimos, ipsa minima rem, delectus ab aliquid in porro corporis, quibusdam dolorum beatae dolore. Iste sit explicabo mollitia velit, consequatur delectus!
-       </p>
-       <div class="d-flex align-items-center">
-         <img src="../../assets/images/doc1.png" alt="" >
-         <h5 class="patient-title px-4">
-           Ben Walker
-         </h5>
-       </div>
-     </div>
-   </div>
-   <div class="item text-white">
-     <div class="patient-card">
-       <i class="fa-solid fa-star"></i>
-       <i class="fa-solid fa-star"></i>
-       <i class="fa-solid fa-star"></i>
-       <i class="fa-solid fa-star"></i>
-       <i class="fa-regular fa-star"></i>
-       <h5 class="patient-word" >Great Service!</h5>
-       <p class="patient-paragraph">
-         Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore dignissimos, ipsa minima rem, delectus ab aliquid in porro corporis, quibusdam dolorum beatae dolore. Iste sit explicabo mollitia velit, consequatur delectus!
-       </p>
-       <div class="d-flex align-items-center">
-         <img src="../../assets/images/doc1.png" alt="" >
-         <h5 class="patient-title px-4">
-           Ben Walker
-         </h5>
-       </div>
-     </div>
-   </div>
-   <div class="item text-white">
-     <div class="patient-card">
-       <i class="fa-solid fa-star"></i>
-       <i class="fa-solid fa-star"></i>
-       <i class="fa-solid fa-star"></i>
-       <i class="fa-solid fa-star"></i>
-       <i class="fa-regular fa-star"></i>
-       <h5 class="patient-word" >Great Service!</h5>
-       <p class="patient-paragraph">
-         Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore dignissimos, ipsa minima rem, delectus ab aliquid in porro corporis, quibusdam dolorum beatae dolore. Iste sit explicabo mollitia velit, consequatur delectus!
-       </p>
-       <div class="d-flex align-items-center">
-         <img src="../../assets/images/doc1.png" alt="" >
-         <h5 class="patient-title px-4">
-           Ben Walker
-         </h5>
-       </div>
-     </div>
-   </div>
 
- </div>
- </div>
 
- </div>
+</div>
 
 
  <app-footer></app-footer>
